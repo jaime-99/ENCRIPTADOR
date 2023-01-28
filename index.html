@@ -1,0 +1,166 @@
+<html>
+
+
+
+<head>
+   <title>encriptar</title>
+   <link rel="stylesheet" href="style.css">
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <h1 id="titulo">Aplicacion para desencriptar y encriptar una palabra</h1>
+
+    <img src="./Imagenes/sitch.png" class="switch"> 
+
+    <textarea class="area1" name="textarea" id="area0" rows="10" cols="50"  placeholder="Oprime el boton B para Encriptar.. 
+    El boton a para borrar 
+    El boton Y para Desencriptar
+    El boton X para copiar "  ></textarea>
+
+    <img src="./Imagenes/pantalla.png" class="pantalla"> 
+
+    <textarea  class="area2" name="area"   id="area1" rows="10" cols="50"  placeholder="Aqui aparecera el texto cifrado"></textarea>
+
+    <button id="boton1" name="boton1">B</button>
+
+    <button id="boton2" name="boton2">A</button>
+
+    <button id="boton3" name="boton3">Y </button>
+
+    <button id="boton4" name="boton4">X </button>
+
+
+
+
+    <footer>
+
+
+       <p class="abajo"> &copy JaimeGFlores  </p>
+        
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+    </html>
+
+
+    <script>
+
+        document.getElementById("area0").focus(); // estos son donde se escribe el texto
+
+
+        var button = document.getElementById("boton1");
+        button.onclick = mostrarTexto;
+
+        var button = document.getElementById("boton2");
+        button.onclick = borrarTexto;
+
+        var button = document.getElementById("boton3");
+        button.onclick = decifrarTexto;
+
+        var button = document.getElementById("boton4");
+        button.onclick = copyText;
+        
+
+
+
+
+
+
+        function mostrarTexto() {
+      //nuemrosHay = false;
+
+
+
+
+         var input = document.getElementById("area0").value;
+
+
+         var input2 = input.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");  // esto es para cambiar las letras por otras
+         document.getElementById("area1").value = input2;
+
+        }
+
+        function borrarTexto(){
+            document.getElementById("area0").value= "";
+            document.getElementById("area1").value= "";
+
+        }
+
+
+
+
+        function decifrarTexto(){
+
+            var input = document.getElementById("area0").value;
+
+            var input2 = input.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");  // esto es para cambiar las letras por otras
+            document.getElementById("area1").value = input2;
+        }
+
+      
+        function copiar(){
+
+            var input = document.getElementById("area0").value;
+            
+
+            input.select();
+
+        }
+
+        function copyText() {
+        
+            var ola = document.getElementById("area1"); //obtiene el elemento input
+             ola.select(); //selecciona el texto del input
+            document.execCommand("copy"); //copia el texto seleccionado al portapapeles
+            alert("Texto copiado al portapapeles: " + ola.value); //muestra una alerta
+
+
+
+        
+        }
+
+        // haremos una funcion nueva para que cuando no ingresen texto, una imagen se vea y te diga que no ha ingresado texto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
