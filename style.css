@@ -1,157 +1,138 @@
-body{
-    background-color: bisque;
-}
-
 #titulo{
     color: black;
     text-align: center;
     border-style: solid;
     background: orange;
     padding: 20;
-
-
 }
 
-#label1 {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
-    margin: 0.6rem 0;
-    font-size: 28px;
-    font-weight: bold;
-    
-    
-}
-#name1{
-    position: relative;
-    display: inline-block;
-    width: 390px;
-    height: 100px;
-    font-size: 25px;
-    border: 0;
-    background: bisque;
-    outline: none; /* para quitar los bordes del input */ 
-
-    
-    
-
-}
-#boton1{
-        background-color: white;
-        font-size: 16px;
-        padding: 10 5;
-        cursor:pointer;
-        text-align: center;
-        
-        
-
-}
-#boton1:hover{
-    background: orange;
-}
-
-#boton2{
-    background-color: white;
-        font-size: 16px;
-        padding: 10 5;
-        cursor: pointer;
-}
-#boton2:hover{
-    background: orange;
-}
-#name2{
-    position: relative;
-    display: inline-block;
-
-    margin-left: 30;
-
-    width: 390px;
-    height: 100px;
-    font-size: 25px;
-    
-
-}
-
-#desencriptar0{
-    position: relative;
-    display: inline-block;
-    width: 390;
-    height: 100;
-    font-size: 25px;
-
-}
-
-#des{
-    position: relative;
-    display: inline-block;
-    width: 390;
-    height: 100;
-    font-size: 25px;
-}
-
-
-div{
-    text-align: center;
-    margin-top: 200;
-}
-
-footer{
-    
-    /*
-    text-align: center;
-    background: white;
-     position: absolute;
-     margin-top: 100px;
-     margin-left: 630px;
-     */
-
-    background: white;
-    padding: 5px;
-    position: relative;
-    top: 60px;
-
-
-
-
-
-}
-
-#pie{
-
-    text-align: center;
-    color: black;
-}
 .switch{
+    width: 50%;
+
+    filter: brightness(1.1); /* quita el fondo de una imagen */
+    mix-blend-mode: multiply;
+    padding-top: 10px;
     
+    
+}
+.area1{
+
+    position: relative;
+    right: 590px;
+    bottom: 50px;
+    resize: none; /* para que no podamos cambiar su tamaño */
+    outline: none;
+    background-color: #252829;
+    border: 0;
+    color: green;
+    
+    width: 410px;
+    font-size: 18px;
+    
+}
+
+.area2{
+    
+    position: relative;
+    left: 480px;
+    bottom: 490px;
+    width: 350px;
+    height: 183px;
+    border: 0px;
+    color: green;
+    outline: none;
+    resize: none;
+
+
+
+
+
+
+}
+.pantalla{
+    width: 30%;
     filter: brightness(1.1); /* quita el fondo de una imagen */
     mix-blend-mode: multiply;
 
-    width: 50%;
-    padding-top: 100px;
     position: relative;
-
-    
+    left: 880px;
+    bottom: 330px;
 }
 
-
-
-
-
-
-
-
-
-
-#textoEnSwitch{
-    position: absolute;
-    top:290px;
-    left: 200px;
-    width: 15%;
-    outline: none;
+#boton1{
     background-color: black;
     color: white;
-    font-size: 15px;
-   
-
-
+    border-radius: 10px;
+    position: relative;
+    bottom: 620px;
+    right: 147px;
 
 }
+#boton1:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#boton2{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+
+    bottom: 642px;
+    right: 153px;
+
+}
+
+#boton2:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+
+#boton3{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+
+    bottom: 642px;
+    right: 227px;
+
+}
+
+#boton3:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+#boton4{
+
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+
+    bottom: 663px;
+    right: 230px;
+
+}
+#boton4:hover{
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+}
+
+footer{
+    background-color: gray;
+    padding: 10px;
+
+}
+
+.abajo{
+    text-align: center;
+
+}
+
+ 
